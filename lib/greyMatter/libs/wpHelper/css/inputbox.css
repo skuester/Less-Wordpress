@@ -1,0 +1,20 @@
+/* inputBox css */
+input[type="text"].wph-inputbox {
+	width: 265px;
+}
+label.wph-inputbox
+{
+	display: block;
+	margin-bottom:10px;
+	margin-top:15px;
+	
+}
+.dgm-wph input[type="text"],
+.dgm-wph input[type="password"],
+.dgm-wph input[type="file"]{ 
+ 	width:100%; 
+ 	}
+div.wph-inputbox p{ 
+	display:inline;
+	margin:0 15px 0 6px;
+	}

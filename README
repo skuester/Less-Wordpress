@@ -1,0 +1,9 @@
+-------------------------------
+LESS WordPress Boilderplate
+-------------------------------
+Version 1.4
+
+@description A WordPress boilerplate theme employing LESS CSS and the wpHelper library.
+
+TO INSTALL:
+Drop this into the wp-content/themes directory

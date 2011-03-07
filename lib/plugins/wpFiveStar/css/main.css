@@ -1,0 +1,109 @@
+/* wpFiveStar style 
+ * Star images from (Unobtusive) AJAX Rating Bars v 1.2.2
+ * by Ryan Masuga, ryan@masugadesign.com 
+ */
+
+/* Summary */
+.wpfs-paramlist {
+	list-style-type:none;
+	padding:0px;
+	margin:0px;	
+	display:block;
+	overflow:hidden;
+	}
+
+.wpfs-param {
+	overflow:hidden;
+	padding:5px 0 5px;
+	border-bottom:1px solid #ddd;
+	}
+	
+.wpfs-param p { margin:0px; }
+
+.wpfs-param-label {
+	height:30px;
+	line-height:30px;
+	float:left;
+	padding-right:10px;
+	font-weight:bold;
+	}
+
+.wpfs-star { 
+	float:left;
+	overflow:hidden;
+	height:30px;
+	width:30px;
+	background:url(../img/star.gif) left top no-repeat;
+	display:block;
+	text-indent:-9999px;
+	}
+	.wpfs-stars{ float:right; overflow:hidden;}
+
+/* javascript styles */
+.wpfs-clickable { cursor:pointer; }
+.wpfs-clickable:hover,
+.wpfs-on { background-position:0px -30px; }
+
+/* Highlight Stars */
+.wpfs-rating-1 .wpfs-star1,
+
+.wpfs-rating-2 .wpfs-star-2,
+.wpfs-rating-2 .wpfs-star-1,  
+
+.wpfs-rating-3 .wpfs-star-3,
+.wpfs-rating-3 .wpfs-star-2,
+.wpfs-rating-3 .wpfs-star-1,
+
+.wpfs-rating-4 .wpfs-star-4, 
+.wpfs-rating-4 .wpfs-star-3,
+.wpfs-rating-4 .wpfs-star-2,
+.wpfs-rating-4 .wpfs-star-1, 
+
+.wpfs-rating-5 .wpfs-star-5, 
+.wpfs-rating-5 .wpfs-star-4,
+.wpfs-rating-5 .wpfs-star-3,
+.wpfs-rating-5 .wpfs-star-2,
+.wpfs-rating-5 .wpfs-star-1
+{
+	background-position: 0px -30px;
+}
+
+/* Individual Rating */
+.wpfs-rating { width:210px; }
+
+.wpfs-rating .wpfs-star {
+	width:15px;
+	height:15px;
+	margin-top: 8px;
+	background:url(../img/star-sm.gif) left top no-repeat;
+	}
+	
+/* Highlight Small Stars */
+.wpfs-rating .wpfs-rating-1 .wpfs-star1,
+
+.wpfs-rating .wpfs-rating-2 .wpfs-star-2,
+.wpfs-rating .wpfs-rating-2 .wpfs-star-1,  
+
+.wpfs-rating .wpfs-rating-3 .wpfs-star-3,
+.wpfs-rating .wpfs-rating-3 .wpfs-star-2,
+.wpfs-rating .wpfs-rating-3 .wpfs-star-1,
+
+.wpfs-rating .wpfs-rating-4 .wpfs-star-4, 
+.wpfs-rating .wpfs-rating-4 .wpfs-star-3,
+.wpfs-rating .wpfs-rating-4 .wpfs-star-2,
+.wpfs-rating .wpfs-rating-4 .wpfs-star-1, 
+
+.wpfs-rating .wpfs-rating-5 .wpfs-star-5, 
+.wpfs-rating .wpfs-rating-5 .wpfs-star-4,
+.wpfs-rating .wpfs-rating-5 .wpfs-star-3,
+.wpfs-rating .wpfs-rating-5 .wpfs-star-2,
+.wpfs-rating .wpfs-rating-5 .wpfs-star-1
+{
+	background-position: 0px -15px;
+}
+
+/* Form */
+#wpfs-review-form {
+	/* Unset by JS - prevents submittion with JS disabled */
+	display:none;
+}

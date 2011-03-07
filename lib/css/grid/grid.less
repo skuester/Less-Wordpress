@@ -1,0 +1,52 @@
+/* GRIDLESS
+ * 24 Column, flexible grid system using LESS.css based on BluePrint.css
+ *
+ * pageWidth, gColumns, gm defined in settings.less
+ * 
+ * TODO: Include a print stylesheet.
+ */
+ 
+/* Grid Vars */
+@unit: (@pageWidth + @gm) / @gColumns;
+
+/* Grid (based on Blueprint*/
+@g(@u: 12; @marginTop: 0; @marginRight: @gm; @marginBottom: 0; @marginLeft: 0;) {
+	@gpadding: @gpadding + 0;
+	@gborder: @gborder + 0;
+	float:left;
+	margin: @marginTop @marginRight @marginBottom @marginLeft;
+	width: (@u * @unit) - (@marginRight + @marginLeft + @gpadding + @gborder);
+}
+@append(@u: 1;) {
+	padding-right: (@u * @unit);
+}
+@prepend(@u: 1;) {
+	padding-left: (@u * @unit);
+}
+@shift(@pu: -20;) {
+	@npu: 0 - @pu;
+	margin: 0 @npu 0 @pu;
+	position:relative;
+}
+@last() {
+	margin-right:0;
+}
+@newRow() {
+	clear:left;
+}
+
+/* Related Mixins */
+@wrapper() {
+	width: @pageWidth;
+	margin: 0 auto;
+}
+@wrapperAfter() {
+	content:"\0020";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+	overflow:hidden;
+}
+
+

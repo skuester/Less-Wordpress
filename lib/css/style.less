@@ -1,0 +1,39 @@
+/* Style.less
+ *
+ * Define Mixins and variables in this file. It is the first to load.
+ */
+ 
+#wrapper {
+	@wrapper();
+    background:red;
+	position:relative;
+}
+#wrapper:after {
+	@wrapperAfter();
+}
+
+#col1 {
+	@g(4);
+	background:blue;
+}
+
+#col2 {
+	padding:20px;
+	@gpadding: 40px;
+	@g(16; 0; @gm; 18px;);
+	background:#fff;
+}
+
+#col3 {
+	padding:10px 20px;
+	@gpadding: 40px;
+	background:green;
+	@g(4);
+	@last();
+}
+
+#copyright {
+	@g(24);
+	@last();
+	background:#555;
+}

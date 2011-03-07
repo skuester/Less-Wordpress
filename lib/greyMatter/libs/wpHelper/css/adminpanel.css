@@ -1,0 +1,25 @@
+/* General */
+.wph-admin{ width:100%;}
+.wph-admin td{ 
+	padding: 5px 15px;
+	border-bottom:1px solid #DFDFDF;
+	}
+p.wph-admin-descrip{ color:#999; height:12px;}
+
+/* Inputs */
+.wph-admin .wph-admin-inputs { 
+	width:50%; 
+	}
+.wph-admin input[type="text"],
+.wph-admin input[type="password"],
+.wph-admin input[type="file"]{ 
+ 	width:100%; 
+ 	}
+.wph-admin .wph-admin-inputs p{ 
+	display:inline;
+	margin:0 15px 0 6px;
+	}
+		
+		
+	
+	

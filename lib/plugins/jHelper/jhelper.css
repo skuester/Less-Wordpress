@@ -1,0 +1,8 @@
+.j-modal{}
+
+/* AJAX Contact Forms */
+.j-contact-response { display:none; text-align:center; margin-top:50px; }
+.j-contact-loading { display:none; }
+
+/* Slideshow */
+#slideshow .slide{ position:absolute; }

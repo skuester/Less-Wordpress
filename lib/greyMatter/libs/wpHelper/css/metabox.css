@@ -1,0 +1,33 @@
+/* inputBox css */
+
+label.wph-inputbox,
+a.metabox-delete
+{
+	display: block;
+	margin-bottom:10px;
+	margin-top:15px;
+	float:left;
+	
+}
+a.metabox-delete {margin-left:5px; text-decoration:none;}
+a.metabox-delete:before { content:'('; text-decoration:none; color:black;}
+a.metabox-delete:after { content:')'; text-decoration:none; color:black;}
+
+.wph-inputbox input[type="text"],
+.wph-inputbox input[type="password"],
+.wph-inputbox input[type="file"],
+.wph-inputbox select { 
+ 	width:264px;
+ 	}
+div.wph-inputbox p{ 
+	display:inline;
+	margin:0 15px 0 6px;
+	}
+	
+div.wph-inputbox-input{
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	padding-bottom:2px;
+	}
+

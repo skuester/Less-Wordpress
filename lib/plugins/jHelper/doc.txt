@@ -1,0 +1,46 @@
+jHelper v1.1
+
+Description: This plugin implements javascript based on convention-based HTML.
+
+Contents:
+1 - Modal Windows
+2 - Slideshow
+3 - AJAX contact forms (with form validation)
+
+1) Modal Windows
+	Element: a.j-modal
+	Attr:	name="filename" > loads filename.php
+			href="default/url/if/noscript"
+	
+	Script:
+	Replaces default href with new one based on the name attribute.
+	Uses fancybox to load the filename.php into a modal window.
+	Inits ajax contact form logic for the modal window.
+	
+2) Slideshow
+	Element: #slideshow > .slide
+	CSS: slides must have an absolute position, to overlap one another
+	
+	Script:
+	Alternatively hide and reveal .slide elements within #slideshow
+	
+3) AJAX contact forms
+	Element:	form#j-contact
+				.j-contact-loading
+				.j-contact-response	
+	Attr:		form[action="ajaxController"] > should be "", and keep php form logic within the window html. This makes form inclusion elsewhere easier.
+	
+	INSTRUCTIONS:
+	The #j-contact form action should be an absolute URL to the form.php file. All php form logic should be contained
+	within this file for easy inclusion of the form in other pages, as well as providing functionality even with JS
+	disabled.
+	
+	Script:
+	Init validation Engine.
+	On submit,
+		Show .j-contact-loading.
+		Post data to form action target.
+		Show .j-response on success.
+		Hide .j-contact-loading.
+		Close modal window.
+		
